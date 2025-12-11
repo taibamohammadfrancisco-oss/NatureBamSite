@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nature Dashboard with Video</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background-image: url('bg4.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+    }
+
+    .sidebar {
+      width: 220px;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      height: 100vh;
+      padding: 20px 10px;
+    }
+
+    .sidebar h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 22px;
+      color: #90ee90;
+    }
+
+    .sidebar a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 12px 20px;
+      margin-bottom: 10px;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+
+    .sidebar a:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .main-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      background: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(5px);
+    }
+
+    .topbar {
+      height: 60px;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      justify-content: space-between;
+    }
+
+    .topbar h1 {
+      font-size: 20px;
+    }
+
+    .content {
+      padding: 30px;
+      color: #fff;
+      flex: 1;
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.4);
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .video-container {
+      margin-top: 20px;
+    }
+
+    .video-container video {
+      width: 100%;
+      max-height: 400px;
+      border-radius: 10px;
+    }
+    .logo {
+  width: 200px;      
+  height: 150px;     
+  justify-content: center;
+  align-items: center;
+  
+}
+
+    @media screen and (max-width: 768px) {
+      .sidebar {
+        display: none;
+      }
+
+      .topbar h1 {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+
+    <img src="Bamlogo.jpg"   alt="Logo" class="logo"> <h2></h2>
+    <a href="bamdash.html"> Home</a>
+    <a href="explore1.html"> Explore</a>
+    <a href="mess.html"> Message</a>
+    <a href="me.html"> About Us</a>
+    <a href="bamcon.html">Contact Us</a>
+    <a href="bamlogin1.html"> Log out</a>
+
+    
+  </div>
+
+  <div class="main-content">
+    <div class="topbar">
+      <h1>Welcome to BamSite</h1>
+      <!--<div>🌱 User</div>-->
+    </div>
+    <div class="content">
+      <div class="card">
+        <p>Feel free to find Peace here</p>
+        
+      </div>
+
+      <div class="card video-container">
+        <h2>Nature Video</h2>
+        <video controls autoplay loop muted>
+          <source src="bamvid1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

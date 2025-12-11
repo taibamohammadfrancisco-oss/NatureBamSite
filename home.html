@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nature Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: url('bg4.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 15px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 60px 20px;
+    }
+
+    .card {
+      width: 300px;
+      height: 200px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(5px);
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-decoration: none;
+      transition: transform 0.3s, background 0.3s;
+       background: url('bg10.webp');
+       color: black;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .card i {
+      font-size: 40px;
+      margin-bottom: 10px;
+
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 15px;
+      font-size: 14px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+  </style>
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header>🌿 Bam NatureSite 🌿</header>
+
+  <div class="card-container">
+    
+    <a href="#" class="card">
+      <i class="fas fa-image"></i>
+      <h3>Mountains</h3>
+    </a>
+
+<a href="#" class="card">
+      <i class="fas fa-leaf"></i>
+      <h3>Waterfalls</h3>
+    </a>
+
+    <a href="#" class="card">
+      <i class="fas fa-box"></i>
+      <h3>Garden</h3>
+    </a>
+     
+     
+    <a href="#" class="card">
+      <i class="fas fa-info-circle"></i>
+      <h3>Forest</h3>
+    </a>
+
+    <a href="#" class="card">
+      <i class="fas fa-sign-out-alt"></i>
+      <h3>Scenery</h3>
+    </a>
+
+    
+  </div>
+
+  <footer>Francisco 2025 — Stay Calm, Stay Green 🌱</footer>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Nature Registration Form  </title>
+   
+</head>
+<link rel="stylesheet" type="text/css" href="regstyle.css">
+<body>
+
+
+<div class="form-container">
+
+    <h2>   <td align="center"><img src="Bamlogo.JPG" width="70px" align="center" style="padding-bottom: 20px;">  Registration Form  </td> </h2>
+    <form>
+
+
+        
+        <input type="text" placeholder="ID Number"  required>
+       
+       <!-- <label for="name">Full Name</label>-->
+         <input type="text" placeholder="Full Name"  required >
+       
+       <!-- <label for="address">Address</label> -->
+        <input type="text" placeholder="Address"  required>
+       
+
+        <!-- <label for="address">Address</label> -->
+        <!-- <textarea id="address" name="address" required></textarea> /*rows="3" -->
+
+       <!-- <label for="age">Age</label> -->
+        <input type="text" placeholder="Age"  required>
+       
+         
+       
+        <select  id="gender" style="width: 100%;"  name="gender" required  > 
+            <option value="" disabled selected>Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          
+
+        </select>
+
+       <!-- <label for="course">Course</label> -->
+       
+        <select  id="course"   name="course" style="width: 100%;" required>
+       
+            <option value="" disabled selected>Select Course</option>
+            <option value="it">Information Technology</option>
+            <option value="engineering">Engineering</option>
+            <option value="business">Business Administration</option>
+            <option value="education">Education</option>
+            <option value="nursing">Nursing</option>
+            <option value="nursing">BS Computer Science</option>
+            <option value="nursing">BS Vulcanizing Shop </option>
+        </select>
+
+        <!--<label for="civil_status">Civil Status</label> -->
+        <select  id="civil_status" style="width: 100%;"  name="civil_status"  style="width: 106%;" required>
+            <option value="" disabled selected>Select Status</option>
+            <option value="single">Single</option>
+            <option value="married">Married</option>
+        </select>
+
+       <!-- <label for="contact">Contact Number</label> -->
+        <input  type="tel" id="contact"   name="contact" pattern="[0-9]{10,15}" required placeholder="Contact No." >
+
+        <button type="button" onclick="window.location.href='bamlogin1.html'"> Register</button> </a>
+
+    <!-- <button type="bu<a href="bamlogin1.html">tton"   style="width: 50%;" onclick="window.location.href='bamlogin.html'"> Back</button> -->
+  
+ 
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Nature</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: url('bg10.webp') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    /* Lightbox (image preview) */
+    .lightbox {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 80%;
+      border-radius: 10px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+    }
+
+    .lightbox:target {
+      display: flex;
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 15px;
+      font-size: 14px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+
+    .back-btn {
+      position: fixed;
+      top: 15px;
+      left: 15px;
+      background: rgba(255, 255, 255, 0.2);
+      border: none;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .back-btn:hover {
+      background: rgba(255, 255, 255, 0.4);
+    }
+  </style>
+</head>
+<body>
+  <button class="back-btn" onclick="window.location.href='bamdashboard.html'"> ← </button> </a>  
+
+  <header>🌿 Explore Bam Nature Gallery 🌿</header>
+
+  <div class="gallery">
+    <a href="#img1"><img src="mountain.avif" alt="Mountains"> </a>
+
+    
+    <a href="#img2"><img src="beach.jpg" alt="Beaches"></a>
+    <a href="#img3"><img src="forest.jpg" alt="Forest"></a>
+    <a href="#img4"><img src="grass.jpg" alt="Grass"></a>
+    <a href="#img5"><img src="flower.webp" alt="Flowers"></a>
+    <a href="#img6"><img src="river.jpeg" alt="River"></a>
+
+    <a href="#img7"><img src="trees.jpeg" alt="Trees"></a>
+    <a href="#img8"><img src="garden.webp" alt="Garden"></a>
+    <a href="#img9"><img src="waterfall.jpg" alt="Waterfall"></a>
+    <a href="#img10"><img src="sunset.jpg" alt="Sunset"></a>
+
+
+  </div>
+
+  <!-- Lightbox images -->
+  <div id="img1" class="lightbox"><a href="#"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80" alt=""></a></div>
+  <div id="img2" class="lightbox"><a href="#"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80" alt=""></a></div>
+  <div id="img3" class="lightbox"><a href="#"><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1600&q=80" alt=""></a></div>
+  <div id="img4" class="lightbox"><a href="#"><img src="https://images.unsplash.com/photo-1499744937866-d7e566a20a61?auto=format&fit=crop&w=1600&q=80" alt=""></a></div>
+  <div id="img5" class="lightbox"><a href="#"><img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=1600&q=80" alt=""></a></div>
+  <div id="img6" class="lightbox"><a href="#"><img src="https://images.unsplash.com/photo-1494783367193-149034c05e8f?auto=format&fit=crop&w=1600&q=80" alt=""></a></div>
+
+  <!--<div id="img1" class="lightbox"><a href="#"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80" alt=""></a></div>
+  <div id="img1" class="lightbox"><a href="#"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80" alt=""></a></div>
+  <div id="img1" class="lightbox"><a href="#"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80" alt=""></a></div>
+<div id="img1" class="lightbox"><a href="#"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80" alt=""></a></div> -->
+
+
+
+  <footer>Francisco 2025 Explore Nature — Breathe the Beauty 🌱</footer>
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nature Dashboard with Video</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background-image: url('bg4.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+    }
+
+    .sidebar {
+      width: 220px;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      height: 100vh;
+      padding: 20px 10px;
+    }
+
+    .sidebar a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 12px 20px;
+      margin-bottom: 10px;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+
+    .sidebar a:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .main-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      background: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(5px);
+    }
+
+    .topbar {
+      height: 60px;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      justify-content: space-between;
+    }
+
+    .content {
+      padding: 30px;
+      color: #fff;
+      flex: 1;
+      width: 100%;
+    }
+
+    /* CARD WITH IMAGE */
+    .card {
+      background: rgba(0, 0, 0, 0.4);
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      height: 500px;
+      overflow: hidden;
+    }
+
+    .card img {
+      width: 100%;
+      height: 250px; /* Adjust height here */
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .card p {
+      font-size: 18px;
+      line-height: 1.4;
+    }
+
+    .logo {
+      width: 200px;
+      height: 150px;
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <img src="Bamlogo.jpg" alt="Logo" class="logo">
+
+    <a href="bamdash.html">Home</a>
+    <a href="explore1.html">Explore</a>
+    <a href="mess.html">Message</a>
+    <a href="me.html">About Us</a>
+      <a href="bamcon.html">Contact Us</a>
+    <a href="bamlogin1.html"> Log out</a>
+  </div>
+
+  <div class="main-content">
+    <div class="topbar">
+      <h1>Welcome to BamSite</h1>
+    </div>
+
+    <div class="content">
+      <div class="card">
+        <!-- IMAGE INSIDE CARD -->
+        <img src="waterfall.jpg" alt="waterfall Image">
+
+        <p>
+          Zamboanga City, known for its unique culture, also hides natural gems like waterfalls, with the most famous being Merloquet Falls in Sibulao, a stunning multi-tiered cascade perfect for swimming in its deep pools, requiring a trek down hundreds of steps but offering a refreshing, raw nature experience. Other waterfalls found nearby or within the region include Nancy Falls (Km 25, La Paz) and potentially smaller falls like Tagbilat, offering similar mountain escapes into lush surroundings. .
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
